@@ -14,3 +14,5 @@ for (x, y, w, h) in faces:
 # Display the output
 cv2.imshow('img', img)
 cv2.waitKey()
+
+je test
