@@ -7,3 +7,17 @@ Pour travailler localement, il suffit de cloner un projet après l’avoir fork�
 Pour synchroniser les modifications faites depuis notre machine avec notre dépôt distant (dépôt GitHub), il suffit de faire un git commit depuis le dépôt local et de push (envoyer) les modifications sur le dépôt GitHub à l’aide de la commande git push [nom-distant] [nom-local]. Taper git push origin master par exemple revient à envoyer les modifications situées dans ma branche master vers origin.
 
 Pour récupérer en local les dernières modifications du dépôt GitHub, on va utiliser la commande git pull [nom-distant] [nom-local]. 
+
+***********************************************************************************
+
+# Define Sequential model with 3 layers
+model = keras.Sequential(
+    [
+        layers.Dense(2, activation="relu", name="layer1"),
+        layers.Dense(3, activation="relu", name="layer2"),
+        layers.Dense(4, name="layer3"),
+    ]
+)
+# Call model on a test input
+x = tf.ones((3, 3))
+y = model(x)
