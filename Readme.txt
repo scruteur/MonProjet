@@ -14,7 +14,7 @@ x = tf.ones((3, 3))
 y = model(x)
 
 
-
+*********************************************************************************
 
 
     git status : permet de visualiser quel est l'état du repository.
@@ -22,6 +22,7 @@ y = model(x)
     git commit -m "Un commentaire" : permet de valider le ou les git add effectué avant.
     git push : permet d'envoyer vos commits en attentes sur GitHub (demande votre login dans la console puis votre mot de passe dans une fenêtre, voir captures).
 
+**********************************************************************************
 
 Création d'un modèle séquentiel
 
