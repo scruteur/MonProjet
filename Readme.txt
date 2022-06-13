@@ -22,7 +22,8 @@ y = model(x)
     git commit -m "Un commentaire" : permet de valider le ou les git add effectué avant.
     git push : permet d'envoyer vos commits en attentes sur GitHub (demande votre login dans la console puis votre mot de passe dans une fenêtre, voir captures).
     
-    Pour synchroniser les modifications faites depuis notre machine avec notre dépôt distant (dépôt GitHub), il suffit de faire un git commit depuis le dépôt local et de push (envoyer) les modifications sur le dépôt GitHub à l’aide de la commande git push [nom-distant] [nom-local]. Taper git push origin master par exemple revient à envoyer les modifications situées dans ma branche master vers origin.
+    Pour synchroniser les modifications faites depuis notre machine avec notre dépôt distant (dépôt GitHub), il suffit de faire un git commit depuis le dépôt local et de push (envoyer) les modifications sur le dépôt GitHub à l’aide de la commande git push [nom-distant] [nom-local]. 
+    Taper git push origin master par exemple revient à envoyer les modifications situées dans ma branche master vers origin.
 
 Pour récupérer en local les dernières modifications du dépôt GitHub, on va utiliser la commande git pull [nom-distant] [nom-local]
 
