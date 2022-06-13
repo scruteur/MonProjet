@@ -3,4 +3,6 @@ import tensorflow as tf
 from tensorflow import keras
 d
  
- 
+Les réseaux de neurones ne traitent pas les données brutes,
+telles que les fichiers texte, les fichiers d'image JPEG codés ou Fichiers CSV.
+Ils traitent vectorisées & standardisées . 
