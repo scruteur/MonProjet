@@ -1,3 +1,9 @@
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
+
+Pour travailler localement, il suffit de cloner un projet après l’avoir forké. On va ensuite pouvoir effectuer nos différentes modifications sur notre machine.
+
+Pour synchroniser les modifications faites depuis notre machine avec notre dépôt distant (dépôt GitHub), il suffit de faire un git commit depuis le dépôt local et de push (envoyer) les modifications sur le dépôt GitHub à l’aide de la commande git push [nom-distant] [nom-local]. Taper git push origin master par exemple revient à envoyer les modifications situées dans ma branche master vers origin.
+
+Pour récupérer en local les dernières modifications du dépôt GitHub, on va utiliser la commande git pull [nom-distant] [nom-local]. 
