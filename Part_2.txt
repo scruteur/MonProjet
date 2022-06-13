@@ -22,6 +22,13 @@ model = keras.Sequential(
 x = tf.ones((3, 3))
 y = model(x)
 
+Chargement des données
 
-on test
+Les modèles Keras acceptent trois types d'entrées :
+
+    Tableaux NumPy , tout comme Scikit-Learn et de nombreuses autres bibliothèques basées sur Python. 
+Ce est une bonne option si vos données tiennent en mémoire.
+    TensorFlow Datasetobjets . C'est un option haute performance plus adaptée aux ensembles de données qui ne tiennent pas en mémoire et qui sont diffusés à partir du disque ou d'un système de fichiers distribué.
+    Les générateurs Python qui génèrent des lots de données (comme des sous-classes personnalisées de la keras.utils.Sequenceclasser).
+
 
