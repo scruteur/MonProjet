@@ -8,3 +8,9 @@ telles que les fichiers texte, les fichiers d'image JPEG codés ou Fichiers CSV.
 Ils traitent vectorisées & standardisées . 
 
 Les fichiers texte doivent être lus dans des tenseurs de chaîne, puis divisés en mots. Finalement, le les mots doivent être indexés et transformés en tenseurs entiers. 
+
+
+Creating a Sequential model
+
+You can create a Sequential model by passing a list of layers to the Sequential constructor:
+
