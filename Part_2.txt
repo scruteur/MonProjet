@@ -2,9 +2,11 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 
-Pour travailler localement, il suffit de cloner un projet après l’avoir forké. On va ensuite pouvoir effectuer nos différentes modifications sur notre machine.
+Pour travailler localement, il suffit de cloner un projet après l’avoir forké. 
+On va ensuite pouvoir effectuer nos différentes modifications sur notre machine.
 
-Pour synchroniser les modifications faites depuis notre machine avec notre dépôt distant (dépôt GitHub), il suffit de faire un git commit depuis le dépôt local et de push (envoyer) les modifications sur le dépôt GitHub à l’aide de la commande git push [nom-distant] [nom-local]. Taper git push origin master par exemple revient à envoyer les modifications situées dans ma branche master vers origin.
+Pour synchroniser les modifications faites depuis notre machine avec notre dépôt distant (dépôt GitHub), il suffit de faire un git commit depuis le dépôt local et de push (envoyer) les modifications sur le dépôt GitHub à l’aide de la commande git push [nom-distant] [nom-local].
+Taper git push origin master par exemple revient à envoyer les modifications situées dans ma branche master vers origin.
 
 Pour récupérer en local les dernières modifications du dépôt GitHub, on va utiliser la commande git pull [nom-distant] [nom-local]. 
 
@@ -28,7 +30,9 @@ Les modèles Keras acceptent trois types d'entrées :
 
     Tableaux NumPy , tout comme Scikit-Learn et de nombreuses autres bibliothèques basées sur Python. 
 Ce est une bonne option si vos données tiennent en mémoire.
-    TensorFlow Datasetobjets . C'est un option haute performance plus adaptée aux ensembles de données qui ne tiennent pas en mémoire et qui sont diffusés à partir du disque ou d'un système de fichiers distribué.
+    TensorFlow Datasetobjets . 
+    C'est un option haute performance plus adaptée aux ensembles de données qui ne tiennent pas en mémoire
+    et qui sont diffusés à partir du disque ou d'un système de fichiers distribué.
     Les générateurs Python qui génèrent des lots de données (comme des sous-classes personnalisées de la keras.utils.Sequenceclasser).
 
 
@@ -41,7 +45,8 @@ Dans ce guide, vous apprendrez à :
     Préparez vos données avant de former un modèle (en les transformant soit en NumPy tableaux ou tf.data.Datasetobjets).
     Effectuer le prétraitement des données, par exemple la normalisation des caractéristiques ou le vocabulaire indexage.
     Construisez un modèle qui transforme vos données en prédictions utiles, à l'aide de l'API fonctionnelle Keras.
-    Entraînez votre modèle avec le Keras intégré fit()méthode, tout en étant soucieux des points de contrôle, de la surveillance des métriques et de la tolérance aux pannes.
+    Entraînez votre modèle avec le Keras intégré fit()méthode, tout en étant soucieux des points de contrôle, 
+    de la surveillance des métriques et de la tolérance aux pannes.
     Évaluez votre modèle sur des données de test et comment l'utiliser pour l'inférence sur de nouvelles données.
     Personnalisez ce fit()fait, par exemple pour construire un GAN.
     Accélérez la formation en tirant parti de plusieurs GPU.
