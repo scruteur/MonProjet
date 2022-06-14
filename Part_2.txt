@@ -32,3 +32,17 @@ Ce est une bonne option si vos données tiennent en mémoire.
     Les générateurs Python qui génèrent des lots de données (comme des sous-classes personnalisées de la keras.utils.Sequenceclasser).
 
 
+Introduction
+
+Êtes-vous un ingénieur en apprentissage automatique qui souhaite utiliser Keras expédier des fonctionnalités d'apprentissage en profondeur dans des produits réels ? Ce guide servira comme première introduction aux concepts de base de l'API Keras.
+
+Dans ce guide, vous apprendrez à :
+
+    Préparez vos données avant de former un modèle (en les transformant soit en NumPy tableaux ou tf.data.Datasetobjets).
+    Effectuer le prétraitement des données, par exemple la normalisation des caractéristiques ou le vocabulaire indexage.
+    Construisez un modèle qui transforme vos données en prédictions utiles, à l'aide de l'API fonctionnelle Keras.
+    Entraînez votre modèle avec le Keras intégré fit()méthode, tout en étant soucieux des points de contrôle, de la surveillance des métriques et de la tolérance aux pannes.
+    Évaluez votre modèle sur des données de test et comment l'utiliser pour l'inférence sur de nouvelles données.
+    Personnalisez ce fit()fait, par exemple pour construire un GAN.
+    Accélérez la formation en tirant parti de plusieurs GPU.
+    Affinez votre modèle grâce au réglage des hyperparamètres.
