@@ -1,20 +1,28 @@
 Les modèles Keras acceptent trois types d'entrées :
 
-    Tableaux NumPy , tout comme Scikit-Learn et de nombreuses autres bibliothèques basées sur Python. Ce est une bonne option si vos données tiennent en mémoire.
-    TensorFlow Datasetobjets . C'est un option haute performance plus adaptée aux ensembles de données qui ne tiennent pas en mémoire et qui sont diffusés à partir du disque ou d'un système de fichiers distribué.
+    Tableaux NumPy , tout comme Scikit-Learn et de nombreuses autres bibliothèques basées sur Python.
+    Ce est une bonne option si vos données tiennent en mémoire.
+    TensorFlow Datasetobjets . 
+    C'est un option haute performance plus adaptée aux ensembles de données qui ne tiennent pas en mémoire 
+    et qui sont diffusés à partir du disque ou d'un système de fichiers distribué.
     Les générateurs Python qui génèrent des lots de données (comme des sous-classes personnalisées de la keras.utils.Sequenceclasser).
 
-Avant de commencer l'entraînement d'un modèle, vous devez rendre vos données disponibles sous l'un des ces formats. Si vous disposez d'un grand ensemble de données et que vous vous entraînez sur des GPU, envisagez en utilisant Datasetobjets, puisqu'ils s'occuperont des détails critiques pour la performance, comme:
+Avant de commencer l'entraînement d'un modèle, vous devez rendre vos données disponibles sous l'un des ces formats. 
+Si vous disposez d'un grand ensemble de données et que vous vous entraînez sur des GPU, 
+envisagez en utilisant Datasetobjets, puisqu'ils s'occuperont des détails critiques pour la performance, comme:
 
     Prétraitement asynchrone de vos données sur le CPU pendant que votre GPU est occupé et mise en mémoire tampon dans une file d'attente.
-    Prélecture des données sur la mémoire du GPU afin qu'elles soient immédiatement disponibles lorsque le GPU a terminé le traitement du lot précédent, vous pouvez donc atteindre une utilisation complète du GPU.
+    Prélecture des données sur la mémoire du GPU afin qu'elles soient immédiatement disponibles lorsque le GPU a terminé le traitement du lot précédent,
+    vous pouvez donc atteindre une utilisation complète du GPU.
 
 Keras propose une gamme d'utilitaires pour vous aider à transformer les données brutes sur disque en un Dataset:
 
-    tf.keras.preprocessing.image_dataset_from_directorytransforme les fichiers image triés en dossiers spécifiques à une classe dans un ensemble de données étiqueté de tenseurs d'image.
+    tf.keras.preprocessing.image_dataset_from_directorytransforme les fichiers image triés en dossiers spécifiques 
+    à une classe dans un ensemble de données étiqueté de tenseurs d'image.
     tf.keras.preprocessing.text_dataset_from_directoryfait de même pour les fichiers texte.
 
-De plus, le TensorFlow tf.datacomprend d'autres utilitaires similaires, tels que tf.data.experimental.make_csv_datasetpour charger des données structurées à partir de fichiers CSV.
+De plus, le TensorFlow tf.datacomprend d'autres utilitaires similaires, tels que tf.data.experimental.make_csv_datasetpour
+charger des données structurées à partir de fichiers CSV.
 
 Exemple : obtention d'un jeu de données étiqueté à partir de fichiers image sur disque
 
