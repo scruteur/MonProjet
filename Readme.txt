@@ -27,6 +27,11 @@ y = model(x)
 
 Pour récupérer en local les dernières modifications du dépôt GitHub, on va utiliser la commande git pull [nom-distant] [nom-local]
 
+cloner un depot existant depuis gitub:
+copier votre repertoire de travail sur github pour l'nevoyer sur votre ordinateur
+
+git clone https://github ...........
+
 **********************************************************************************
 
 Création d'un modèle séquentiel
